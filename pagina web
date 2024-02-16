@@ -1,0 +1,81 @@
+index.html:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido/a a mi Página de Presentación</h1>
+    </header>
+
+    <section class="about-me">
+        <div class="content">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Mi nombre es <span id="my-name">888</span> y estoy emocionado/a de compartir un poco sobre mí.</p>
+            <p>Soy apasionado/a por <span id="my-passion">888</span> y me encanta <span id="my-interests">888</span>.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarme en las redes sociales o contactarme por correo electrónico:</p>
+            <ul>
+                <li>Twitter: <a href="https://twitter.com/888" target="_blank">@888</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/888/" target="_blank">888</a></li>
+                <li>Correo Electrónico: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>¡Gracias por visitar mi página!</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me, .contact {
+    background-color: white;
+    padding: 2em;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+document.getElementById('my-name').textContent = 'Tu Nombre';
+document.getElementById('my-passion').textContent = 'tus pasiones';
+document.getElementById('my-interests').textContent = 'tus intereses';
